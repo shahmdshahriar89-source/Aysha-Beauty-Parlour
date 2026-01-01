@@ -1,60 +1,88 @@
-<!DOCTYPE html><html lang="bn">
+<!DOCTYPE html>
+<html lang="bn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aysha Beauty Parlor</title>
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#fff6f9; color:#333; }
-    header { background:#e91e63; color:white; padding:20px; text-align:center; }
-    nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
-    .hero { padding:60px 20px; text-align:center; background:#fce4ec; }
-    .hero h1 { font-size:36px; margin-bottom:10px; }
-    .section { padding:40px 20px; max-width:1000px; margin:auto; }
-    .services { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:20px; }
-    .card { background:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
-    footer { background:#333; color:white; text-align:center; padding:20px; }
-    button { background:#e91e63; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; }
-    input, textarea { width:100%; padding:10px; margin:5px 0 15px; border-radius:5px; border:1px solid #ccc; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আয়শা বিউটি পার্লার - দিনাজপুর</title>
+    <style>
+        /* CSS ডিজাইন */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #fff5f8; color: #333; line-height: 1.6; }
+        header { background: #d81b60; color: white; padding: 40px 20px; text-align: center; }
+        nav { background: #ad1457; display: flex; justify-content: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; padding: 15px 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background: #d81b60; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .hero { text-align: center; padding: 50px 20px; background: white; border-radius: 15px; margin-top: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h2 { color: #ad1457; border-bottom: 2px solid #ad1457; display: inline-block; padding-bottom: 5px; }
+        .service-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        .service-table th, .service-table td { border: 1px solid #fce4ec; padding: 15px; text-align: left; }
+        .service-table th { background-color: #fce4ec; color: #ad1457; }
+        .btn-group { margin: 30px 0; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 12px 25px; text-decoration: none; color: white; border-radius: 25px; font-weight: bold; transition: 0.3s; }
+        .btn-booking { background: #25D366; } /* WhatsApp Green */
+        .btn-support { background: #007bff; }
+        .contact-info { background: white; padding: 30px; border-radius: 15px; margin-top: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 40px; }
+    </style>
 </head>
-<body><header>
-  <h2>Aysha Beauty Parlor</h2>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="#support">Support</a>
-  </nav>
-</header><section class="hero" id="home">
-  <h1>Aysha Beauty Parlor</h1>
-  <p>আপনার সৌন্দর্য, আমাদের পেশাদার যত্নে</p>
-  <a href="https://wa.me/8801739771064" target="_blank"><button>WhatsApp করুন</button></a>
-</section><section class="section" id="services">
-  <h2>আমাদের সেবাসমূহ</h2>
-  <div class="services">
-    <div class="card">Facial & Skin Care<br><small>শুরু মূল্য: ৮০০ টাকা</small></div>
-    <div class="card">Bridal Makeover<br><small>শুরু মূল্য: ৫,০০০ টাকা</small></div>
-    <div class="card">Hair Cut & Styling<br><small>শুরু মূল্য: ৩০০ টাকা</small></div>
-    <div class="card">Manicure & Pedicure<br><small>শুরু মূল্য: ৬০০ টাকা</small></div>
-    <div class="card">Party Makeover<br><small>শুরু মূল্য: ৪,০০০ টাকা</small></div>
-  </div>
-</section><section class="section" id="contact">
-  <h2>যোগাযোগ</h2>
-  <p>📍 ঠিকানা: কালুরমোড়, ফকিরপাড়া রোড, সদর, দিনাজপুর</p>
-  <p>📞 ফোন: +8801739771064</p>
-  <p>💬 WhatsApp: সকাল ১০টা – রাত ৯টা</p>
-</section><section class="section" id="support">
-  <h2>Support Form</h2>
-  <form>
-    <label>নাম</label>
-    <input type="text" name="name" required>
-    <label>ইমেইল</label>
-    <input type="email" name="email" required>
-    <label>মেসেজ</label>
-    <textarea name="message" rows="5" required></textarea>
-    <button type="submit">পাঠান</button>
-  </form>
-</section><footer>
-  <p>© 2026 Aysha Beauty Parlor. All rights reserved.</p>
-</footer></body>
+<body>
+
+<header>
+    <h1>আয়শা বিউটি পার্লার</h1>
+    <p>আপনার সৌন্দর্য ও আত্মবিশ্বাসের বিশ্বস্ত ঠিকানা</p>
+</header>
+
+<nav>
+    <a href="#home">হোম</a>
+    <a href="#services">সার্ভিস ও প্রাইজ</a>
+    <a href="#contact">যোগাযোগ</a>
+</nav>
+
+<div class="container">
+    <section id="home" class="hero">
+        <h2>স্বাগতম</h2>
+        <p>দিনাজপুরের সেরা বিউটি সার্ভিসের জন্য আজই চলে আসুন <strong>আয়শা বিউটি পার্লারে</strong>। আমরা দিচ্ছি সাশ্রয়ী মূল্যে আধুনিক সব সেবা।</p>
+        <p><strong>সময়:</strong> প্রতিদিন সকাল ৯:০০ টা থেকে রাত ৯:০০ টা</p>
+    </section>
+
+    <section id="services" style="margin-top: 40px;">
+        <center><h2>আমাদের সার্ভিসসমূহ</h2></center>
+        <table class="service-table">
+            <thead>
+                <tr>
+                    <th>সার্ভিসের নাম</th>
+                    <th>মূল্য (৳)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>থ্রেডিং (আইব্রো)</td><td>৫০/-</td></tr>
+                <tr><td>গোল্ড ফেসিয়াল</td><td>৮০০/-</td></tr>
+                <tr><td>ডায়মন্ড ফেসিয়াল</td><td>১২০০/-</td></tr>
+                <tr><td>হেয়ার কাট (স্টাইলিশ)</td><td>৪০০/-</td></tr>
+                <tr><td>পার্টি মেকআপ</td><td>১৫০০/-</td></tr>
+                <tr><td>ব্রাইডাল মেকআপ</td><td>৫০০০/- থেকে শুরু</td></tr>
+                <tr><td>পেডিকিউর ও মেনিকিউর</td><td>৭০০/-</td></tr>
+            </tbody>
+        </table>
+
+        <div class="btn-group">
+            <a href="https://wa.me/8801XXXXXXXXXX" class="btn btn-booking">WhatsApp অ্যাডভান্স বুকিং</a>
+            <a href="tel:01XXXXXXXXX" class="btn btn-support">সাপোর্ট (কল করুন)</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-info">
+        <center><h2>যোগাযোগের ঠিকানা</h2></center>
+        <p><strong>স্থান:</strong> কালুরমোড়, ফকিরপাড়া, সদর, দিনাজপুর।</p>
+        <p><strong>মোবাইল:</strong> ০১৭XXXXXXXX</p>
+        <p><strong>সময়:</strong> সকাল ৯টা - রাত ৯টা (প্রতিদিন)</p>
+        <p>সরাসরি আমাদের পার্লারে এসে বা ফোনে কথা বলে আপনার বুকিং নিশ্চিত করতে পারেন।</p>
+    </section>
+</div>
+
+<footer>
+    &copy; ২০২৬ আয়শা বিউটি পার্লার। সর্বস্বত্ব সংরক্ষিত।
+</footer>
+
+</body>
 </html>
